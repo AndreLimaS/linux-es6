@@ -236,6 +236,17 @@ body {
   animation: slideDown .5s forwards;
 }
 
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: .3s;
+}
+
+.js .js-scroll.ativo{
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
 @keyframes slideDown {
   from {
     opacity: 0;
