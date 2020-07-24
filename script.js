@@ -1,3 +1,4 @@
+//add class ativo for hide slide
 function initTabNav (){
   const tabMenu = document.querySelectorAll('.js-tabmenu li');
   const tabContent = document.querySelectorAll('.js-tabcontent section');
@@ -19,6 +20,7 @@ function initTabNav (){
 }
 initTabNav();
 
+//accordion faq hide/show
 function initAccordion(){
   const accordionList = document.querySelectorAll('.js-accordion dt');
   const activeClass = 'ativo';
@@ -37,6 +39,7 @@ function initAccordion(){
 }
 initAccordion();
 
+//scroll suave with behavior smooth
 function initScrollSuave() {
   const linksInternos = document.querySelectorAll('.js-menu a[href^="#"]');
   function scrollToSection(event) {
@@ -56,9 +59,9 @@ function initScrollSuave() {
 }
 initScrollSuave();
 
+//animation section with transition 3d
 function initAnimacaoScroll(){
   const sections = document.querySelectorAll('.js-scroll');
-
   if (sections.length){
     const windowMetade = window.innerHeight * 0.5;
     function animaScroll(){
