@@ -1,0 +1,19 @@
+[
+    {
+        "name" : "Mint",
+        "total" : 54843
+    },
+    {
+        "name" : "Debian",
+        "total" : 12423
+    },
+    {
+        "name" : "Fedora",
+        "total" : 20503
+    },
+    {
+        "name" : "Ubuntu",
+        "total" : 95243
+    }
+
+]
