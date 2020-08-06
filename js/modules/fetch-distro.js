@@ -3,14 +3,19 @@ import initAnimaNumeros from "./anima-numeros.js";
 export default function initFetchDistro() {
 
     async function fetchDistro (url) {
-        const distroResponse = await fetch(url);
-        const distroJSON = await distroResponse.json();
-        const numeroGrid = document.querySelector('.numeros-grid');
-        distroJSON.forEach(distro =>{
-            const divDistro = createDistro(distro);
-            numeroGrid.appendChild(divDistro);
-        });
-        initAnimaNumeros();
+        try{     
+            const distroResponse = await fetch(url);
+            const distroJSON = await distroResponse.json();
+            const numeroGrid = document.querySelector('.numeros-grid');
+            distroJSON.forEach(distro =>{
+                const divDistro = createDistro(distro);
+                numeroGrid.appendChild(divDistro);
+            });
+            initAnimaNumeros();
+        }
+        catch (erro) {
+            console.log(erro)
+        }
     }
     
     function createDistro(distro) {
@@ -22,6 +27,5 @@ export default function initFetchDistro() {
     }
     
     fetchDistro('./distrosapi.json');
-
 }
 
