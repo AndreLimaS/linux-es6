@@ -1,255 +1,269 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Linux</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Playfair+Display+SC"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script>
+      document.documentElement.className += "js";
+    </script>
+  </head>
 
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Linux</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="https://fonts.googleapis.com/css?family=Playfair+Display+SC" rel="stylesheet" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <script>
-    document.documentElement.className += "js";
-  </script>
-</head>
+  <body>
+    <div class="grid-container">
+      <nav class="menu js-menu">
+        <button data-menu="button" aria-expanded="false" aria-controls="menu">
+          Menu
+        </button>
+        <ul data-menu="list" id="menu">
+          <li><a href="#linux">Linux</a></li>
+          <li data-dropdown>
+            <a href="sobre.html">Sobre</a>
+            <ul class="dropdown-menu">
+              <li><a href="empresa.html">A Empresa</a></li>
+              <li><a href="equipe.html">Equipe</a></li>
+              <li><a href="socios.html">Sócios</a></li>
+              <li><a href="investidores.html">Investidores</a></li>
+            </ul>
+          </li>
+          <li><a href="#faq">Faq</a></li>
+          <li><a href="#contato">Contato</a></li>
+          <li><a data-modal="abrir" href="login.html">Login →</a></li>
+        </ul>
+      </nav>
+      <section class="grid-section linux" data-anime="scroll" id="linux">
+        <h1 class="titulo">Linux</h1>
+        <ul class="linux-lista" data-tab="menu">
+          <li>
+            <img src="img/debian.png" />
+          </li>
+          <li>
+            <img src="img/xubuntu.png" />
+          </li>
+          <li>
+            <img src="img/ubuntu.jpg" />
+          </li>
+          <li>
+            <img src="img/fedora.jpg" />
+          </li>
+          <li>
+            <img src="img/mint.jpg" />
+          </li>
+          <li>
+            <img src="img/deepin.jpg" />
+          </li>
+        </ul>
+        <div class="linux-descricao" data-tab="content">
+          <section data-anime="show-right">
+            <h2>Debian</h2>
+            <p>
+              Debian anteriormente chamado de Debian GNU/Linux e hoje apenas de
+              Debian, é um sistema operacional composto inteiramente de software
+              livre. É mantido oficialmente pelo Projeto Debian.
+            </p>
+            <p>
+              O projeto recebe ainda apoio de outros indivíduos e organizações
+              em todo mundo.
+            </p>
+            <p>
+              O grupo distribui ainda núcleos Unix-like, como o Debian
+              GNU/kFreeBSD e o Debian GNU/Hurd. O Debian é especialmente
+              conhecido pelo seu sistema de gestão de pacotes, chamado APT, que
+              permite: atualização relativamente fácil a partir de versões
+              relativamente antigas; instalação quase sem esforço para novos
+              pacotes e remoção limpa de pacotes antigos.
+            </p>
+          </section>
 
-<body>
-  <div class="grid-container">
-    <nav class="menu js-menu">
-      <button data-menu='button' aria-expanded='false' aria-controls='menu'>Menu</button>
-      <ul data-menu='list' id='menu'>
-        <li><a href="#linux">Linux</a></li>
-        <li data-dropdown>
-          <a href="sobre.html">Sobre</a>
-          <ul class="dropdown-menu">
-            <li><a href="empresa.html">A Empresa</a></li>
-            <li><a href="equipe.html">Equipe</a></li>
-            <li><a href="socios.html">Sócios</a></li>
-            <li><a href="investidores.html">Investidores</a></li>
-          </ul>
-        </li>
-        <li><a href="#faq">Faq</a></li>
-        <li><a href="#contato">Contato</a></li>
-        <li><a data-modal="abrir" href="login.html">Login →</a></li>
-      </ul>
-    </nav>
-    <section class="grid-section linux" data-anime="scroll" id="linux">
-      <h1 class="titulo">Linux</h1>
-      <ul class="linux-lista" data-tab='menu'>
-        <li>
-          <img src="img/debian.png" />
-        </li>
-        <li>
-          <img src="img/xubuntu.png" />
-        </li>
-        <li>
-          <img src="img/ubuntu.jpg" />
-        </li>
-        <li>
-          <img src="img/fedora.jpg" />
-        </li>
-        <li>
-          <img src="img/mint.jpg" />
-        </li>
-        <li>
-          <img src="img/deepin.jpg" />
-        </li>
-      </ul>
-      <div class="linux-descricao" data-tab='content'>
-        <section data-anime='show-right'>
-          <h2>Debian</h2>
-          <p>
-            Debian anteriormente chamado de Debian GNU/Linux e hoje apenas de
-            Debian, é um sistema operacional composto inteiramente de software
-            livre. É mantido oficialmente pelo Projeto Debian.
-          </p>
-          <p>
-            O projeto recebe ainda apoio de outros indivíduos e organizações em
-            todo mundo.
-          </p>
-          <p>
-            O grupo distribui ainda núcleos Unix-like, como o Debian
-            GNU/kFreeBSD e o Debian GNU/Hurd. O Debian é especialmente conhecido
-            pelo seu sistema de gestão de pacotes, chamado APT, que permite:
-            atualização relativamente fácil a partir de versões relativamente
-            antigas; instalação quase sem esforço para novos pacotes e remoção
-            limpa de pacotes antigos.
-          </p>
-        </section>
+          <section data-anime="show-down">
+            <h2>Xubuntu</h2>
+            <p>
+              O Xubuntu foi originalmente planejado para ser lançado ao mesmo
+              tempo que o Ubuntu 5.10 Breezy Badger, 13 de outubro de 2005, mas
+              o trabalho não estava completo até aquela data.
+            </p>
+            <p>
+              Em vez disso, o nome do Xubuntu foi usado para o meta-pacote
+              xubuntu-desktop disponível através do Gerenciador de Pacotes
+              Synaptic que instalou o desktop Xfce.
+            </p>
+            <p>
+              O primeiro lançamento oficial do Xubuntu, liderado por Jani
+              Monoses, apareceu em 1º de junho de 2006, como parte da linha
+              Dapper Drake do Ubuntu 6.06, que também incluía o Kubuntu e o
+              Edubuntu.
+            </p>
+            <p>
+              Cody A.W. Somerville desenvolveu uma estratégia abrangente para o
+              projeto Xubuntu chamado Xubuntu Strategy Document. No início de
+              2009, o documento estava aguardando uma segunda leitura pelo
+              Ubuntu Community Council.
+            </p>
+          </section>
+          <section data-anime="show-down">
+            <h2>Ubuntu</h2>
+            <p>
+              Ubuntu é um sistema operacional ou sistema operativo de código
+              aberto, construído a partir do núcleo Linux, baseado no Debian e
+              utiliza GNOME como ambiente de desktop de sua mais recente versão
+              com suporte de longo prazo (LTS). É desenvolvido pela Canonical
+              Ltd.
+            </p>
+            <p>
+              Geralmente é executado em computadores pessoais e também é popular
+              em servidores de rede, geralmente executando a versão
+              UbuntdistribuiçõesTouch.
+            </p>
+            <p>
+              A proposta do Ubuntu é oferecer um sistema que qualquer pessoa
+              possa utilizar sem dificuldades, independentemente de
+              nacionalidade, nível de conhecimento ou limitações físicas. O
+              sistema deve ser constituído principalmente por software livre e
+              deve também ser isento de qualquer taxa.
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Fedora</h2>
+            <p>
+              Fedora (conhecido como Fedora Core antes da versão 7) é um sistema
+              operacional ou sistema operativo Linux. O sistema operacional
+              Fedora Linux é software livre e de código aberto, e os programas
+              disponíveis dentro de seu repositório de programas também são
+              programas livres que aderem a uma licença livre.
+            </p>
+            <p>
+              O Fedora Linux existe desde 2003, e seu desenvolvimento e suporte
+              é oferecido pela comunidade do Projeto Fedora.
+            </p>
+            <p>
+              Após ter descontinuado o sistema operacional Red Hat Linux, a Red
+              Hat patrocina o desenvolvimento do sistema operacional Fedora, se
+              envolvendo no desenvolvimento de vários programas disponíveis para
+              o Fedora, que são eventualmente adicionados para o repositório do
+              Red Hat Enterprise Linux,que é a distribuição Linux atual da
+              empresa.
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Mint</h2>
+            <p>
+              Linux Mint é uma distribuição Linux irlandesa. Possui duas
+              versões: uma baseada em Ubuntu (com o qual é totalmente compatível
+              e partilha os mesmos repositórios) e outra versão baseada em
+              Debian. Suporta muitos idiomas, incluindo a língua portuguesa, e
+              utiliza o Cinnamon como seu principal ambiente de desktop.
+            </p>
+            <p>
+              Esforça-se para ser um "sistema operacional moderno, elegante e
+              confortável, que é poderoso e fácil de usar" e possui suporte
+              multimídia pronto para o uso, incluindo alguns softwares
+              proprietários e vem com uma variedade de aplicativos gratuitos e
+              de código aberto.
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Deepin</h2>
+            <p>
+              O deepin é uma distribuição Linux baseada no Debian Stable.
+              Apresenta uma interface própria, chamada Deepin Desktop
+              Environment (DDE); além de, uma acervo de aplicações próprias. É
+              desenvolvida pela Wuhan Deepin Technology Company Limited,
+              localizada em Wuhan, China.
+            </p>
+            <p>
+              A distribuição ganhou popularidade ao apresentar um elevado
+              cuidado visual com a sua interface e aplicativos próprios. Isso
+              acabou surpreendendo muitos usuários, que olhavam o Linux como um
+              sistema de visual antiquado ("da tela preta", como muitos dizem).
+            </p>
+            <p>
+              Um dos maiores destaques do deepin é a Loja de Aplicativos. Além
+              de apresentar um visual incrível e fácil de usar; permite que
+              usuários leigos possam instalar e remover aplicativos com um
+              clique.
+            </p>
+          </section>
+        </div>
+      </section>
 
-        <section data-anime='show-down'>
-          <h2>Xubuntu</h2>
-          <p>
-            O Xubuntu foi originalmente planejado para ser lançado ao mesmo
-            tempo que o Ubuntu 5.10 Breezy Badger, 13 de outubro de 2005, mas o
-            trabalho não estava completo até aquela data.
-          </p>
-          <p>
-            Em vez disso, o nome do Xubuntu foi usado para o meta-pacote
-            xubuntu-desktop disponível através do Gerenciador de Pacotes
-            Synaptic que instalou o desktop Xfce.
-          </p>
-          <p>
-            O primeiro lançamento oficial do Xubuntu, liderado por Jani Monoses,
-            apareceu em 1º de junho de 2006, como parte da linha Dapper Drake do
-            Ubuntu 6.06, que também incluía o Kubuntu e o Edubuntu.
-          </p>
-          <p>
-            Cody A.W. Somerville desenvolveu uma estratégia abrangente para o
-            projeto Xubuntu chamado Xubuntu Strategy Document. No início de
-            2009, o documento estava aguardando uma segunda leitura pelo Ubuntu
-            Community Council.
-          </p>
-        </section>
-        <section data-anime='show-down'>
-          <h2>Ubuntu</h2>
-          <p>
-            Ubuntu é um sistema operacional ou sistema operativo de código
-            aberto, construído a partir do núcleo Linux, baseado no Debian e
-            utiliza GNOME como ambiente de desktop de sua mais recente versão
-            com suporte de longo prazo (LTS). É desenvolvido pela Canonical Ltd.
-          </p>
-          <p>
-            Geralmente é executado em computadores pessoais e também é popular
-            em servidores de rede, geralmente executando a versão UbuntdistribuiçõesTouch.
-          </p>
-          <p>
-            A proposta do Ubuntu é oferecer um sistema que qualquer pessoa possa
-            utilizar sem dificuldades, independentemente de nacionalidade, nível
-            de conhecimento ou limitações físicas. O sistema deve ser
-            constituído principalmente por software livre e deve também ser
-            isento de qualquer taxa.
-          </p>
-        </section>
-        <section data-anime='show-right'>
-          <h2>Fedora</h2>
-          <p>
-            Fedora (conhecido como Fedora Core antes da versão 7) é um sistema
-            operacional ou sistema operativo Linux. O sistema operacional Fedora
-            Linux é software livre e de código aberto, e os programas
-            disponíveis dentro de seu repositório de programas também são
-            programas livres que aderem a uma licença livre.
-          </p>
-          <p>
-            O Fedora Linux existe desde 2003, e seu desenvolvimento e suporte é
-            oferecido pela comunidade do Projeto Fedora.
-          </p>
-          <p>
-            Após ter descontinuado o sistema operacional Red Hat Linux, a Red
-            Hat patrocina o desenvolvimento do sistema operacional Fedora, se
-            envolvendo no desenvolvimento de vários programas disponíveis para o
-            Fedora, que são eventualmente adicionados para o repositório do Red
-            Hat Enterprise Linux,que é a distribuição Linux atual da empresa.
-          </p>
-        </section>
-        <section data-anime='show-right'>
-          <h2>Mint</h2>
-          <p>
-            Linux Mint é uma distribuição Linux irlandesa. Possui duas versões:
-            uma baseada em Ubuntu (com o qual é totalmente compatível e partilha
-            os mesmos repositórios) e outra versão baseada em Debian. Suporta
-            muitos idiomas, incluindo a língua portuguesa, e utiliza o Cinnamon
-            como seu principal ambiente de desktop.
-          </p>
-          <p>
-            Esforça-se para ser um "sistema operacional moderno, elegante e
-            confortável, que é poderoso e fácil de usar" e possui suporte
-            multimídia pronto para o uso, incluindo alguns softwares
-            proprietários e vem com uma variedade de aplicativos gratuitos e de
-            código aberto.
-          </p>
-        </section>
-        <section data-anime='show-right'>
-          <h2>Deepin</h2>
-          <p>
-            O deepin é uma distribuição Linux baseada no Debian Stable.
-            Apresenta uma interface própria, chamada Deepin Desktop Environment
-            (DDE); além de, uma acervo de aplicações próprias. É desenvolvida
-            pela Wuhan Deepin Technology Company Limited, localizada em Wuhan,
-            China.
-          </p>
-          <p>
-            A distribuição ganhou popularidade ao apresentar um elevado cuidado
-            visual com a sua interface e aplicativos próprios. Isso acabou
-            surpreendendo muitos usuários, que olhavam o Linux como um sistema
-            de visual antiquado ("da tela preta", como muitos dizem).
-          </p>
-          <p>
-            Um dos maiores destaques do deepin é a Loja de Aplicativos. Além de
-            apresentar um visual incrível e fácil de usar; permite que usuários
-            leigos possam instalar e remover aplicativos com um clique.
-          </p>
-        </section>
-      </div>
-    </section>
+      <section class="grid-section faq" data-anime="scroll" id="faq">
+        <h1 class="titulo">FAQ</h1>
+        <dl class="faq-lista" data-anime="accordion">
+          <dt>Quantas distribuições tem o Linux?</dt>
+          <dd>
+            Quase 600 distribuições Linux existem, e a maioria está em
+            desenvolvimento ativo. Por causa da grande disponibilidade de
+            software, as distribuições se diferem em seu foco de usuários, que
+            podem ser computadores pessoais e servidores, ou netbooks e
+            celulares e tablets.
+          </dd>
+          <dt>Qual a mais usada?</dt>
+          <dd>
+            Debian é o nome da distro Linux criada por Ian Ashley Murdoch e é
+            uma das mais populares e utilizadas ao redor do mundo hoje em dia.
+          </dd>
+          <dt>Quais distribuições mais leves?</dt>
+          <dd>
+            Lubuntu, Linux Mint, Xubuntu e MX Linux. O MX Linux é uma das
+            distribuições Linux mais leves, e que tem sido bem cotada nos
+            últimos tempos. Ela é conhecida por ser muito leve, e sem perder a
+            beleza.
+          </dd>
+          <dt>O que é software livre?</dt>
+          <dd>
+            Software livre é o software que concede liberdade ao usuário para
+            executar, acessar e modificar o código fonte, e redistribuir cópias
+            com ou sem modificações.
+          </dd>
+        </dl>
+      </section>
+      <section class="grid-section numeros" data-anime="scroll">
+        <h1 class="titulo">Usuários</h1>
+        <div class="numeros-grid"></div>
+      </section>
+      <section class="grid-section contato" data-anime="scroll" id="contato">
+        <h1 class="titulo">Contato</h1>
+        <div
+          class="mapa"
+          data-tooltip
+          aria-label="Endereco proximo ao estacionamento."
+        >
+          <img src="img/mapa.png" />
+        </div>
+        <ul class="dados">
+          <li>andredlima94@gmail.com</li>
+          <li>+55 (21) 9999-9999</li>
+          <li>Rua linus torvalds, nº 88</li>
+          <li>São Paulo - SP</li>
+          <li>Doe <span class="btc-preco">0</span> bitcion para nos ajudar</li>
+          <li data-semana="1,2,3,4,5" data-horario="8,18">
+            Seg a Sex das 8h as 18h
+          </li>
+        </ul>
+      </section>
 
-    <section class="grid-section faq" data-anime="scroll" id="faq">
-      <h1 class="titulo">FAQ</h1>
-      <dl class="faq-lista" data-anime="accordion">
-        <dt>Quantas distribuições tem o Linux?</dt>
-        <dd>
-          Quase 600 distribuições Linux existem, e a maioria está em
-          desenvolvimento ativo. Por causa da grande disponibilidade de
-          software, as distribuições se diferem em seu foco de usuários, que
-          podem ser computadores pessoais e servidores, ou netbooks e celulares
-          e tablets.
-        </dd>
-        <dt>Qual a mais usada?</dt>
-        <dd>
-          Debian é o nome da distro Linux criada por Ian Ashley Murdoch e é uma
-          das mais populares e utilizadas ao redor do mundo hoje em dia.
-        </dd>
-        <dt>Quais distribuições mais leves?</dt>
-        <dd>
-          Lubuntu, Linux Mint, Xubuntu e MX Linux. O MX Linux é uma das
-          distribuições Linux mais leves, e que tem sido bem cotada nos últimos
-          tempos. Ela é conhecida por ser muito leve, e sem perder a beleza.
-        </dd>
-        <dt>O que é software livre?</dt>
-        <dd>
-          Software livre é o software que concede liberdade ao usuário para
-          executar, acessar e modificar o código fonte, e redistribuir cópias
-          com ou sem modificações.
-        </dd>
-      </dl>
-    </section>
-    <section class='grid-section numeros' data-anime='scroll'>
-      <h1 class="titulo">Usuários</h1>
-      <div class='numeros-grid'>
-      </div>
-    </section>
-    <section class="grid-section contato" data-anime="scroll" id="contato">
-      <h1 class="titulo">Contato</h1>
-      <div class="mapa" data-tooltip aria-label='Endereco proximo ao estacionamento.'>
-        <img src="img/mapa.png" />
-      </div>
-      <ul class="dados">
-        <li>andredlima94@gmail.com</li>
-        <li>+55 (21) 9999-9999</li>
-        <li>Rua linus torvalds, nº 88</li>
-        <li>São Paulo - SP</li>
-        <li>Doe <span class="btc-preco">0</span> bitcion para nos ajudar</li>
-        <li data-semana='1,2,3,4,5' data-horario='8,18'>Seg a Sex das 8h as 18h</li>
-      </ul>
-    </section>
-
-    <footer class="copy">
-      <p>Todos os direitos reservados.</p>
-    </footer>
-  </div>
-  <section class="modal-container" data-modal="container">
-    <div class='modal'>
-      <button data-modal='fechar' class='fechar'>X</button>
-      <form action=''>
-        <label for='email'>Email</label>
-        <input type='text' for='email' id='email'>
-        <label for='senha'>Senha</label>
-        <input type="password" for='senha' id='senha'>
-        <button type='submit'>Entrar</button>
-      </form>
+      <footer class="copy">
+        <p>Todos os direitos reservados.</p>
+      </footer>
     </div>
-  </section>
-  <script type='module' src="js/script.js"></script>
-</body>
-
+    <section class="modal-container" data-modal="container">
+      <div class="modal">
+        <button data-modal="fechar" class="fechar">X</button>
+        <form action="">
+          <label for="email">Email</label>
+          <input type="text" for="email" id="email" />
+          <label for="senha">Senha</label>
+          <input type="password" for="senha" id="senha" />
+          <button type="submit">Entrar</button>
+        </form>
+      </div>
+    </section>
+    <script type="module" src="js/script.js"></script>
+  </body>
 </html>
